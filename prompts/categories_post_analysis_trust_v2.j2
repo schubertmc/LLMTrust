@@ -1,0 +1,26 @@
+Analyze the Provided Social Media Post Based on the Following Criteria:
+	1.	Author Type: Identify the author as a patient, relative, healthcare professional, or other.
+	2.	Cancer Type: Specify the cancer type discussed, or state “unknown”.
+	3.	Sex: Specify the author's sex as male, female, or "unknown".
+	4.	Disease Stage: Indicate the stage of the disease, or state “unknown”.
+	5.	Tone: Analyze the primary tone of the post.
+	6.	Depression Score: Assess the post for signs of depression and assign a score between 0 and 5.
+	7.	Anxiety Score: Evaluate the anxiety level expressed in the post and assign a score between 0 and 5.
+	8.  Distress Score: Evaluate the level of distress expressed in the post and assign a score between 0 and 5.
+	10	Mistrust_Trust_NA: Evaluate whether the post reflects mistrust, trust, or lacks insufficient information to infer trust/mistrust towards the healthcare system.
+	- Definition: A belief that healthcare systems, institutions, or professionals may intentionally or unintentionally cause harm, discriminate, or fail to act in the patient’s best interest.
+	11. Object of distrust: The specific entity, individual, or system that is the focus of mistrust, if any.
+	12. Reason for mistrust, if any.
+    13. Object of mistrust category: Categorize the primary object of mistrust as Healthcare Professionals, Healthcare Institutions, Insurance Providers, Medical Science, or Other.
+    14. Mistrust reason overall category: Categorize the primary reason for mistrust as one of the following: 
+        - Communication
+        - Perceived Incompetence of Medical Management
+        - Disregard for Patients Concerns
+        - Profit-Driven Medical Management at the Expense of Patients
+        - Lack of Trust in Medical Procedures in General
+
+Input Post:
+{% include "post_template.j2" %}
+
+Please analyze the post using the above criteria.
+
